@@ -11,6 +11,14 @@ public class MainHW {
             return false;
         }
     }
+    public boolean numberInInterval(int k) {
+            if (k<101 && k>24) {
+                return true;
+            } else {
+                return false;
+            }
+
+    }
 
 
     // HW 3.2. Нужно написать метод который проверяет, попадает ли переданное число в интервал (25;100) и возвращает true, если попадает и false - если нет,

@@ -23,4 +23,23 @@ class MainHWTest {
         assertFalse(m.evenOddNumber(i));
 
     }
+
+    @ParameterizedTest
+    @CsvSource({"3", "5", "7", "9"})
+    void numberNotInterval(int i){
+        MainHW m = new MainHW();
+        assertFalse(m.numberInInterval(i));
+    }
+
+    @ParameterizedTest
+    @CsvSource({"26", "50", "70", "90"})
+    void numberInInterval(int i){
+        MainHW m = new MainHW();
+        assertTrue(m.numberInInterval(i));
+    }
+
+
+
+
+
 }
